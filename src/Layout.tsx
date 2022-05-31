@@ -37,6 +37,7 @@ const Layout = () => {
         <Link to="slow">Slow</Link>
       </nav>
       <pre>location: {navigation.location?.pathname}</pre>
+      <pre>search: {navigation.location?.search}</pre>
       <pre>navigation.state: {navigation.state}</pre>
       {shouldShowSpinner ? <div>Loading...</div> : <Outlet />}
     </>
